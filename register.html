@@ -46,13 +46,13 @@
             }
             err.innerText = "";
             let user = {
-                username: username,
+                name: username,
                 email: email,
                 password: pwd
             };
             user = JSON.stringify(user);
             //localStorage.setItem("user", user);
-            const result=await fetch("http://localhost:3000/users",{
+            const result=await fetch("http://localhost:8080/users",{
                 method:"POST",
                 headers:{
                     "Content-Type":"application/json"
